@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import { LogOut, Search, Loader2, Mic, MicOff, ArrowLeft } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import { useLocation } from "wouter";
-import { getEpoxyData } from "@/lib/google-sheets";
+import "./page-themes.css";
 
 export default function EpoxyPage() {
   const { logoutMutation } = useAuth();
@@ -203,7 +203,7 @@ export default function EpoxyPage() {
       </header>
 
       <main className="container mx-auto px-0.5 py-4 flex-1">
-        <Card className="shadow-md rounded-lg mx-0 transition-all duration-300 hover:shadow-xl transform translate-y-0 border border-teal-100/50 bg-gradient-to-b from-white to-teal-50/30 hover:bg-gradient-to-b hover:from-white hover:to-teal-100/50">
+        <Card className="epoxy-theme">
           <CardContent className="p-1">
             <div className="flex flex-row gap-2 mb-4 overflow-x-auto">
               <div className="min-w-0 flex-1">

@@ -7,6 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Loader2, FileText, Mic, MicOff, LogOut, Search, ArrowLeft } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import { useLocation } from "wouter";
+import "./page-themes.css";
 
 interface DisRptResult {
   blockNo: string;
@@ -196,7 +197,7 @@ export default function DisRpt() {
       </header>
 
       <main className="container mx-auto px-0.5 py-4 flex-1">
-        <Card className="shadow-md rounded-lg mx-0 transition-all duration-300 hover:shadow-xl transform translate-y-0 border border-green-100/50 bg-gradient-to-b from-white to-green-50/30 hover:bg-gradient-to-b hover:from-white hover:to-green-100/50">
+        <Card className="shadow-md rounded-lg mx-0 transition-all duration-300 hover:shadow-xl transform translate-y-0 border border-green-100/50 bg-gradient-to-b from-white to-green-50/30 hover:bg-gradient-to-b hover:from-white hover:to-green-100/50 dis-rpt-theme">
           <CardContent className="p-1">
             <div className="flex flex-row gap-2 mb-4 overflow-x-auto">
               <div className="min-w-0 flex-1">
@@ -206,7 +207,7 @@ export default function DisRpt() {
                       placeholder="Block No (req)"
                       value={blockNo}
                       onChange={(e) => setBlockNo(e.target.value)}
-                      className="h-9 text-sm pr-8 focus-visible:ring-green-800"
+                      className="h-9 text-sm pr-8 focus-visible:ring-green-800 focus-visible:ring-offset-green-800"
                     />
                     <Button
                       variant="ghost"
@@ -233,7 +234,7 @@ export default function DisRpt() {
                     placeholder="Part No"
                     value={partNo}
                     onChange={(e) => setPartNo(e.target.value)}
-                    className="h-9 text-sm pr-8 focus-visible:ring-green-800"
+                    className="h-9 text-sm pr-8 focus-visible:ring-green-800 focus-visible:ring-offset-green-800"
                   />
                   <Button
                     variant="ghost"
@@ -256,7 +257,7 @@ export default function DisRpt() {
                     placeholder="Thickness"
                     value={thickness}
                     onChange={(e) => setThickness(e.target.value)}
-                    className="h-9 text-sm pr-8 focus-visible:ring-green-800"
+                    className="h-9 text-sm pr-8 focus-visible:ring-green-800 focus-visible:ring-offset-green-800"
                   />
                   <Button
                     variant="ghost"
