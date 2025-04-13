@@ -7,7 +7,6 @@ import { useQuery } from "@tanstack/react-query";
 import { Loader2, FileText, Mic, MicOff, LogOut, Search, ArrowLeft } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import { useLocation } from "wouter";
-import "./page-themes.css";
 
 interface DisRpt2Result {
   blockNo: string;
